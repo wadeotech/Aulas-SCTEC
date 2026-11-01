@@ -10,14 +10,14 @@ const dataNascimento = "2000-05-15";
 
 const anoDeNascimento = Number (dataNascimento.slice(0,4));
 
-//A expressão new Date().getFullYear() em JavaScript retorna 2026 (o ano atual com quatro dígitos baseado no horário local do sistema)
+//A expressão new Date().getFullYear() em JavaScript retorna o ano atual, com quatro dígitos baseado no horário local do sistema
 const anoAtual = new Date().getFullYear();
 
 const idade = anoAtual - anoDeNascimento;
 
-console.log ("Ano de Nascimento:" + anoDeNascimento);
-console.log ("Ano Atual:" + anoAtual);
-console.log ("Sua idade é:" + idade);
+console.log ("Ano de Nascimento: " + anoDeNascimento);
+console.log ("Ano Atual: " + anoAtual);
+console.log ("Sua idade é: " + idade);
 
 /*Regra do voto no Brasil (a lógica que você vai implementar)
 Idade	Situação
@@ -26,13 +26,12 @@ Menos de 16	Não pode votar
 18 a 69	Deve votar (voto obrigatório)
 70 ou mais	Pode votar (voto facultativo)*/
 
-if (idade >= 16 && idade <= 17) {
-    console.log ("Pode votar. O voto é facultativo");}
-else if (idade >= 18 && idade <= 69){
-    console.log ("Deve votar. Voto obrigatório")
+if (idade <= 15) {
+    console.log ("Não pode votar. Não tem idade mínima");
+} else if ((idade >= 16 && idade <= 17) || idade >= 70) {
+    console.log ("Pode votar. O voto é facultativo");
+} else {
+    console.log ("Deve votar. O voto é obrigatório");
 }
-else {
-    console.log ("Pode votar. O voto é facultativo")
-};
 
  
