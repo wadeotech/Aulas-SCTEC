@@ -21,4 +21,5 @@ console.log(typeof dadosPessoais[1]);
 console.log(typeof dadosPessoais[2]);
 
 // 4. Teste do erro (colocado por último para não travar o restante)
-console.log (notas.length());
+
+notas.length();
