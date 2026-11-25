@@ -1,5 +1,27 @@
 {
   "dependencies": {
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "name": "aulas-sctec",
+  "version": "1.0.0",
+  "description": "Conteúdo com as aulas da SCTEC 2026",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/node": "^26.6.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wadeotech/Aulas-SCTEC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/wadeotech/Aulas-SCTEC/issues"
+  },
+  "homepage": "https://github.com/wadeotech/Aulas-SCTEC#readme"
 }
