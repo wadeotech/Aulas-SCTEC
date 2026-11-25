@@ -24,11 +24,11 @@ class Pizza {
 
     // Decida o preço pelo tamanho. Os valores são exatos (P, M, G), então qual estrutura da Semana 2 se encaixa melhor?
         switch (this.tamanho) {
-            case "P": preco = 45;
+            case "P": preco = 25;
             break;
-            case "M": preco = 60;
+            case "M": preco = 35;
             break;
-            case "G": preco = 90;
+            case "G": preco = 50;
             break;
         }
 // Se a pizza tiver borda, some 8. (Lembre: borda já é true ou false, então dá para usá-la direto no if.)
@@ -49,7 +49,7 @@ Monte a frase do enunciado com crases e ${ }. Para escolher entre “com” e �
 
         const textoBorda = this.borda ? "com" : "sem";
 
-        console.log(`Pizza de ${this.sabor}, ${this.tamanho}, ${textoBorda} borda - R$ ${total}`);
+        console.log(`Pizza de ${this.sabor} tamanho ${this.tamanho} ${textoBorda} borda custará R$ ${total} reais`);
     }
 
 }
@@ -57,6 +57,5 @@ Monte a frase do enunciado com crases e ${ }. Para escolher entre “com” e �
 const pizza1 = new Pizza("Calabresa", "G", true);
 const pizza2 = new Pizza("Mussarela", "P", false);
 
-console.log(pizza1.resumo());
-console.log(pizza2.resumo());
-
+pizza1.resumo();
+pizza2.resumo();
